@@ -1,0 +1,17 @@
+
+nav a{
+    margin: 20px;
+}
+
+.btn{
+    background-color: blue;
+  
+   margin: 0;
+   padding: 8px;
+   color:white;
+   font-weight: 900;
+}
+.btnInfo{
+    background-color: brown;
+    color: white;
+}
