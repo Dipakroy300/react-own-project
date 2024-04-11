@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Header/Header.css'
+import ActiveLink from '../ActiveLink/ActiveLink';
+
 const Header = () => {
     return (
         <nav>
-           <button className='btn'> <Link to={'/'}>Home</Link></button>
-           <button className='btn'><Link to={'/about'}>About</Link></button>
-           <button className='btn'> <Link to={'/friends'}>Friends</Link></button>
-           <button className='btn'><Link to={'/contact'}>Contact</Link></button>
-           <button className='btn'>  <Link to={'/details'}>Details</Link></button>
-           <button className='btn'> <Link to={'/posts'}>Posts</Link> </button>
-          
+           <button className='btn'><ActiveLink to={'/'}>Home</ActiveLink></button>
+           <button className='btn'><ActiveLink to={'/about'}>About</ActiveLink></button>
+           <button className='btn'> <ActiveLink to={'/friends'}>Friends</ActiveLink></button>
+           <button className='btn'><ActiveLink to={'/contact'}>Contact</ActiveLink></button>
+           <button className='btn'>  <ActiveLink to={'/details'}>Details</ActiveLink></button>
+           <button className='btn'> <ActiveLink to={'/posts'}>Posts</ActiveLink> </button>
+        
            
         </nav>
     );

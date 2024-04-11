@@ -99,6 +99,10 @@ const router=createBrowserRouter([
       {
         path:'details',
         element:<Details></Details>
+      },
+      {
+        path:'*',
+        element: <div>Not found, 404</div>
       }
     ]
   }
